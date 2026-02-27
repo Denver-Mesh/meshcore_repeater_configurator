@@ -1,0 +1,10 @@
+services:
+  denvermesh-repeater-configurator:
+    build: .
+    container_name: denvermesh-repeater-configurator
+    restart: unless-stopped
+    privileged: true
+    devices:
+      - /dev/YOUR_DEVICE_HERE:/dev/cu.usbmodem1101
+    volumes:
+      - ./settings.json:/settings.json:ro

@@ -1,0 +1,22 @@
+{
+  "prv.key": "abc123",
+  "name": "My Repeater Name",
+  "owner": {
+    "handle": "My Handle",
+    "antenna_type": "tall",
+    "power_source": "battery backup",
+    "install_type": "rooftop"
+  },
+  "regions": {
+    "all": [
+      "den"
+    ],
+    "home": "den"
+  },
+  "txdelay": 0.8,
+  "direct.txdelay": 0.4,
+  "rxdelay": 3.0,
+  "advert.interval": 240,
+  "flood.advert.interval": 24,
+  "guest.password": ""
+}
