@@ -47,7 +47,7 @@ async def main(_args: Namespace) -> None:
         repeater_settings.set_owner_info_command,
         *(repeater_settings.add_region_commands or []),
         repeater_settings.add_home_region_command,
-        repeater_settings.save_regions_commands,
+        repeater_settings.save_regions_command,
         repeater_settings.set_txdelay_command,
         repeater_settings.set_direct_txdelay_command,
         repeater_settings.set_rxdelay_command,
