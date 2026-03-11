@@ -1,4 +1,4 @@
-# DenverMesh MeshCore Repeater Configurator
+# ColoradoMesh MeshCore Repeater Configurator
 
 A Docker application that will automatically configure a connected MeshCore repeater using a supplied settings file.
 

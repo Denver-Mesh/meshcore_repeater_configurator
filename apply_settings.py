@@ -1,7 +1,7 @@
 import asyncio
 from argparse import ArgumentParser, Namespace
 
-from denvermesh.meshcore.models.general.repeater_settings import RepeaterSettings
+from coloradomesh.meshcore.models.general.repeater_settings import RepeaterSettings
 from meshcore_cli.meshcore_cli import setup_repeater_serial, process_repeater_line
 
 BAUDRATE = 115200

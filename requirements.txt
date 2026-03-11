@@ -1,2 +1,2 @@
 meshcore-cli
-denvermesh==0.2.0
+coloradomesh==0.3.0

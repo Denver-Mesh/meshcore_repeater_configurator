@@ -1,7 +1,7 @@
 services:
-  denvermesh-repeater-configurator:
+  coloradomesh-repeater-configurator:
     build: .
-    container_name: denvermesh-repeater-configurator
+    container_name: coloradomesh-repeater-configurator
     restart: unless-stopped
     privileged: true
     devices:
