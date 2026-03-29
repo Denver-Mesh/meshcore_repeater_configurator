@@ -48,12 +48,15 @@ async def main(_args: Namespace) -> None:
         *(repeater_settings.add_region_commands or []),
         repeater_settings.add_home_region_command,
         repeater_settings.save_regions_command,
+        # TODO: Set region to US
         repeater_settings.set_txdelay_command,
         repeater_settings.set_direct_txdelay_command,
         repeater_settings.set_rxdelay_command,
         repeater_settings.set_advert_interval_command,
         repeater_settings.set_flood_advert_interval_command,
+        repeater_settings.set_path_hash_size_command,
         repeater_settings.set_guest_password_command,
+        repeater_settings.set_admin_password_command,
     ]
     await _process_commands(ser=ser, commands=commands)
     ser.close()

@@ -1,2 +1,2 @@
 meshcore-cli
-coloradomesh==0.3.0
+coloradomesh==0.6.2
