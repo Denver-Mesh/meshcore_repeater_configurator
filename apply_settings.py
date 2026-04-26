@@ -36,10 +36,11 @@ async def _process_commands(ser, commands: list[str]) -> None:
 async def main(_args: Namespace) -> None:
     _baudrate = args.baudrate
     _settings_file_path = args.settings_file_path
+    _serial_port = args.serial_port
 
     repeater_settings = _parse_settings_file(file_path=_settings_file_path)
 
-    ser = await setup_repeater_serial(port=SERIAL_PORT, baudrate=_baudrate)
+    ser = await setup_repeater_serial(port=_serial_port, baudrate=_baudrate)
     commands = [
         'erase',
         repeater_settings.set_private_key_command,
@@ -77,6 +78,11 @@ if __name__ == "__main__":
                         type=str,
                         default=SETTINGS_FILE_PATH,
                         help=f"Path to the settings file (default: {SETTINGS_FILE_PATH})")
+
+    parser.add_argument("--serial-port",
+                        type=str,
+                        default=SERIAL_PORT,
+                        help=f"Path to the serial port (default: {SERIAL_PORT})")
 
     args = parser.parse_args()
 
